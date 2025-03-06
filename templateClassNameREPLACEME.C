@@ -57,7 +57,7 @@ templateClassNameREPLACEME::New
 {
     const word templateClassNameREPLACEMEType (word(
         /*class selector location*/mesh.lookupObject<IOdictionary>("TBDREPLACEME").lookup("templateClassNameREPLACEME"))); 
-    Info<< "Selecting derived Class of ionicTransport: " << templateClassNameREPLACEMEType << endl;   
+    Info<< "Selecting derived Class of baseClassNameREPLACEME: " << templateClassNameREPLACEMEType << endl;   
     auto constructorIter = 
         paramListConstructorTablePtr_->find(templateClassNameREPLACEMEType);                     
     if (constructorIter == paramListConstructorTablePtr_->end())
