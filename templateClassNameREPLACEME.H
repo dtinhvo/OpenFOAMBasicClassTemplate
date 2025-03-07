@@ -67,7 +67,9 @@ public:
         ( // contents of paramList 
             const fvMesh& mesh
         ),
-        (mesh)
+        ( // untyped paramList 
+        mesh
+        )
     );
 
     // Constructors

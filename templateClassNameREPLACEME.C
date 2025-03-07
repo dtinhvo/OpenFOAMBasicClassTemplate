@@ -73,7 +73,7 @@ templateClassNameREPLACEME::New
     }                                                                
     return autoPtr<templateClassNameREPLACEME> ( 
         constructorIter()
-        ( // contents of paramList   
+        ( // untyped paramList  
             mesh
         ) 
     );
