@@ -62,11 +62,14 @@ templateClassNameREPLACEME::New
         paramListConstructorTablePtr_->find(templateClassNameREPLACEMEType);                     
     if (constructorIter == paramListConstructorTablePtr_->end())
     {
-        FatalErrorInFunction
+        FatalErrorIn
+        (
+            "templateClassNameREPLACEME::New" 
+        ) 
             << "unknown baseType model " << templateClassNameREPLACEMEType << endl << endl
             << "Valid schemes are :" << endl
            << paramListConstructorTablePtr_->sortedToc()
-            << exit(FatalIOError);
+            << exit(FatalError);
     }                                                                
     return autoPtr<templateClassNameREPLACEME> ( 
         constructorIter()
