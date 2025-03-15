@@ -80,11 +80,6 @@ templateClassNameREPLACEME::New
 }
 
 
-// * * * * * * * * * * * * * * * * Destructor  * * * * * * * * * * * * * * * //
-
-templateClassNameREPLACEME::~templateClassNameREPLACEME()
-{}
-
 } // namespace Foam
 
 

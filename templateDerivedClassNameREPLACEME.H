@@ -26,69 +26,53 @@ Class
 Description
 
 SourceFiles
-    templateClassNameREPLACEME.C
+    templateDerivedClassNameREPLACEME.C
 
 \*---------------------------------------------------------------------------*/
 
-#ifndef templateClassNameREPLACEME_H
-#define templateClassNameREPLACEME_H
+#ifndef templateDerivedClassNameREPLACEME_H
+#define templateDerivedClassNameREPLACEME_H
 
 #include "runTimeSelectionTables.H"
 #include "volFields.H"
 #include "dimensionedScalar.H"
 #include "volFieldsFwd.H" 
-
+#include "templateClassNameREPLACEME.H"
+ 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 namespace Foam
 {
 /*---------------------------------------------------------------------------*\
-            Class templateClassNameREPLACEME Declaration
+            Class templateDerivedClassNameREPLACEME Declaration
 \*---------------------------------------------------------------------------*/
 
 
-class templateClassNameREPLACEME
+class templateDerivedClassNameREPLACEME : public templateClassNameREPLACEME
 {
     protected:
-        //- mesh
-        const fvMesh& mesh;
+    // - ...
 
 public:
     // - Runtime type information
-    TypeName("templateClassNameREPLACEME");
+    TypeName("templateDerivedClassNameREPLACEME");
 
-    // Declare runtime construction
-
-    declareRunTimeSelectionTable
-    (
-        autoPtr,
-        templateClassNameREPLACEME,
-        paramList,
-        ( // contents of paramList 
-            const fvMesh& mesh
-        ),
-        ( // untyped paramList 
-        mesh
-        )
-    );
 
     // Constructors
-
-        //- Construct
-        templateClassNameREPLACEME
+        templateDerivedClassNameREPLACEME
         ( // contents of paramList  
             const fvMesh& mesh
         );
 
-    // Selectors
-        static autoPtr<templateClassNameREPLACEME> New
+    // Selector
+        static autoPtr<templateDerivedClassNameREPLACEME> New
         (  // contents of paramList  
             const fvMesh& mesh
         );
 
 
     //- Destructor
-    virtual ~templateClassNameREPLACEME(){};
+    virtual ~templateDerivedClassNameREPLACEME(){};
 
 
     // Member Functions

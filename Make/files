@@ -1,2 +1,4 @@
 templateClassNameREPLACEME.C 
+templateDerivedClassNameREPLACEME.C 
+ 
 LIB = $(FOAM_USER_LIBBIN)/TEMPLATELIBRARYREPLACEME
