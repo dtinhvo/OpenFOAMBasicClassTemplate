@@ -32,11 +32,9 @@ namespace Foam
 {
     defineTypeNameAndDebug(templateClassNameREPLACEME, 0);
     defineRunTimeSelectionTable(templateClassNameREPLACEME, paramList);
-}
 
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
-namespace Foam
-{
+
 templateClassNameREPLACEME::templateClassNameREPLACEME
 ( // contents of paramList  
     const fvMesh& mesh

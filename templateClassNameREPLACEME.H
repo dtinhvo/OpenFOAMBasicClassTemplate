@@ -57,8 +57,12 @@ public:
     // - Runtime type information
     TypeName("templateClassNameREPLACEME");
 
-    // Declare runtime construction
+    //- Disallow copy construct
+    templateClassNameREPLACEME (const templateClassNameREPLACEME&);
+    //- Disallow default bitwise assignment
+    void operator=(const templateClassNameREPLACEME&);   
 
+    // Declare runtime construction
     declareRunTimeSelectionTable
     (
         autoPtr,
